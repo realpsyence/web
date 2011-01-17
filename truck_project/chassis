@@ -1,0 +1,18 @@
+Types of chassis under consideration:
+
+Tube-Frame
+  - Used in monster trucks, off-road racing, crawlers. 
+
+Backbone Chassis
+  - Tatra-Style chassis, protects main drivetrain and transfer case, generally uses independent suspension.
+    Very little chassis flex, independent suspension limits articulation. Very durable.
+
+  Box-Ladder 
+  - Stiff lightweight frame, used by most pick-up truck platforms, Land Rover, SUVs.
+
+  Flex-Frame
+  - Strong chassis similar to box-ladder, but generally bigger and designed to allow flex in frame
+    without affecting body. Gives greater articulation than suspension alone, requires specialized 
+    body mounting (3-point). Used by UNIMOGs and others.
+
+    
