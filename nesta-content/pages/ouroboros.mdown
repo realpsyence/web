@@ -1,4 +1,4 @@
-date: Tue Jun 28 21:49:00 -0500 2011
+date: Tue Jul 12 16:22:00 -0500 2011
 
 # On Ouroboros, useful things, and self-reference. 
 
