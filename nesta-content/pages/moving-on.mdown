@@ -1,10 +1,17 @@
-Moving on
-This site had been up for a while with Nesta’s demo articles. In updating it and putting in my first real article, I encountered an issue - namely my install was out of date. I noticed Nesta had been moved to a gem, so I happily gave that a go. Unfortunately, not all was cookies and crisps, and my nginx.conf broke. Turns out, the new version doesn’t create a public/ folder. Not sure one is needed, but the passenger root directive wants to point there, and there wasn’t one, so I made a foolish error and omitted it. A day later, we’re up and running.
+read more: Setting up the site
+date: Wed Jun 29 23:25:00 +0000 2011
+summary: Getting rid of cruft and gems
 
-You may notice I removed the demo articles. I’m normally anti-revisionist, but it was cruft. I’m ok with deleting cruft.
+# Moving on 
 
-More to come.
+  This site had been up for a while with Nesta's demo articles. In updating it and putting in my first real article,
+  I encountered an issue - namely my install was out of date. I noticed Nesta had been moved to a gem, so I happily gave
+  that a go. Unfortunately, not all was cookies and crisps, and my nginx.conf broke. Turns out, the new version doesn't
+  create a public/ folder. Not sure one is needed, but the passenger root directive wants to point there, and there wasn't one,
+  so I made a foolish error and omitted it. A day later, we're up and running.
+
+  You may notice I removed the demo articles. I'm normally anti-revisionist, but it was cruft. I'm ok with deleting cruft.
+
+  More to come.
 
 -d
-
-Published on 29 June 2011
