@@ -1,12 +1,10 @@
 read more: Some things I forgot 
 date: Tue Jul 12 10:50:00 -0500 2011 
-summary: Had some input on my manifesto, here's some updates.
+edited: Sun Jul 17 19:16 -0500 2011
+summary: I asked a couple of friends what they thought of Manifesto's first part. Largely their feedback was encouraging, but it was obvious I missed some rather important issues. 
 
 # What do you think?
 
-I asked a couple of friends what they thought of Manifesto's first part.
-Largely their feedback was encouraging, but it was obvious I missed some rather
-important issues. 
 
 ### Stuff
 
@@ -46,4 +44,3 @@ More to come as people raise issues, and I think more on things. In the meantime
 -d
 
 
-edited: Jul 17 19:16 -0500 2011
