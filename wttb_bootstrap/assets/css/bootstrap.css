@@ -162,7 +162,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #e7e7ef;
   background-image: url('../img/wttb_background.jpg');
 }
 
@@ -5728,7 +5728,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: #b2b2bf;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
