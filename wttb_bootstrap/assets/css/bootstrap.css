@@ -2938,7 +2938,7 @@ table [class*=span],
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #2428a0;
   border: 1px solid #e3e3e3;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -5728,7 +5728,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #b2b2bf;
+  background-color: #20242f;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
