@@ -1,3 +1,10 @@
+---
+title: Engine Stand Notes
+date: 2012-11-29
+time: 16:59
+tags: engine stand, CBR600,diy,tools
+---
+
 Status update, got started on the brackets and adapter, welded a 2 1/2" piece of 1/2" steel rod to a piece of scrap plate...
 Turned them both on the lathe and cut a 2.2" diameter circle out of the plate, which fits up nicely with the tube.
 
