@@ -1,10 +1,72 @@
----
-title: Welcome to Middleman
----
+<div class="row-fluid">
+  <div class="span2">
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Electronics</li>
+        <li><a href="#">Ham Radio</a></li>
+        <li><a href="#">Business Card</a></li>
+        <li><a href="#">Media Cards</a></li>
+        <li class="nav-header">Motorcycles</li>
+        <li><a href="#">CB700SC</a></li>
+        <li><a href="#">SV650</a></li>
+        <li><a href="#">CBR600F4</a></li>
+        <li><a href="#">HCS KX60</a></li>
+        <li class="nav-header">Fabrication/Art</li>
+        <li><a href="#">Turned Titanium</a></li>
+        <li><a href="#">Lighting</a></li>
+        <li><a href="#">Furniture</a></li>
+      </ul>
+    </div><!--/.well -->
+    <aside>
+    <h2>Recent Articles</h2>
+    <ol>
+      <% blog.articles[0...10].each do |article| %>
+        <li><a href="<%= article.url %>"><%= article.title %></a> <span><%= article.date.strftime('%b %e') %></span></li>
+      <% end %>
+    </ol>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    <h2>Tags</h2>
+    <ol>
+      <% blog.tags.each do |tag, articles| %>
+        <li><a href="<%= tag_path tag %>"><%= tag %> (<%= articles.size %>)</a></li>
+      <% end %>
+    </ol>
+
+    <h2>By Year</h2>
+    <ol>
+      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+        <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
+      <% end %>
+    </ol>
+    </aside>
+
+  </div><!--/span-->
+  <div class="span9">
+    <div class="hero-unit">
+      <h1>Welcome!</h1>
+      <p>This is my humble home on the web. You'll find some information and pictures of my personal projects. Enjoy and let me know if you find errors or want more info about something.</p>
+      <p><a class="btn btn-primary btn-large" href="about.html">Who am I? &raquo;</a></p>
+    </div>
+    <div class="row-fluid">
+      <div class="span9">
+        <h2>PA3AKE BOM</h2>
+        <p>I've taken Martein Bakker's parts lists for his H-mode receiver front-end and updated them to reflect recent parts available at DigiKey and other vendors. This is somewhat US-centric, but hopefully it may help others build up his boards. </p>
+        <p><a class="btn" href="#">More info &raquo;</a></p>
+      </div><!--/span-->
+    </div><!--/row-->
+    <div class="row-fluid">
+      <div class="span6">
+        <h2>SV650 Complete!</h2>
+        <p>...at least for now. She's back on the road! GSX-R front-end, ZX-10R shock, lots of lathe work and some interesting bracket choices...</p>
+        <p><a class="btn" href="#">Check it out &raquo;</a></p>
+      </div><!--/span-->
+      <div class="span6">
+        <h2>CBR600F4 -> NYC</h2>
+        <p>With the SV on the road, there was a big empty space in my office next to my desk. Favorably, this coincided with the garage in Baltimore I'd been sharing closing down, so now I've got a 2000 CBR600F4 in need of some TLC to fill the hole.</p>
+        <p><a class="btn" href="#">Progress? &raquo;</a></p>
+      </div><!--/span-->
+    </div><!--/row-->
+  </div><!--/span-->
+</div><!--/row-->
+
+

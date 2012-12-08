@@ -1,0 +1,11 @@
+---
+title: Trouble in Paradise
+date: 2012-11-28a
+time: 17:30
+tags: CBR600,diy,tools
+---
+
+The stub axle I bought to mate with the slack adjuster doesn't fit.
+While they both claimed to be a 1.5" 10-spline standard, the stub axle seems to be marginally more accurate at that than the adjuster.
+All of which means I've got to make my own stub - so far the simplest plan is a bit of plate welded to the engine hoist's plate tube, and a mock spline coming off of that to mate with the adjuster.
+Big question now: what to do about the bit at the bottom to keep the adjuster vertical...
