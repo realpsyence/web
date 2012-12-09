@@ -1,47 +1,4 @@
-<div class="row-fluid">
-  <div class="span2">
-    <div class="well sidebar-nav">
-      <ul class="nav nav-list">
-        <li class="nav-header">Electronics</li>
-        <li><a href="#">Ham Radio</a></li>
-        <li><a href="#">Business Card</a></li>
-        <li><a href="#">Media Cards</a></li>
-        <li class="nav-header">Motorcycles</li>
-        <li><a href="#">CB700SC</a></li>
-        <li><a href="#">SV650</a></li>
-        <li><a href="#">CBR600F4</a></li>
-        <li><a href="#">HCS KX60</a></li>
-        <li class="nav-header">Fabrication/Art</li>
-        <li><a href="#">Turned Titanium</a></li>
-        <li><a href="#">Lighting</a></li>
-        <li><a href="#">Furniture</a></li>
-      </ul>
-    </div><!--/.well -->
-    <aside>
-    <h2>Recent Articles</h2>
-    <ol>
-      <% blog.articles[0...10].each do |article| %>
-        <li><a href="<%= article.url %>"><%= article.title %></a> <span><%= article.date.strftime('%b %e') %></span></li>
-      <% end %>
-    </ol>
-
-    <h2>Tags</h2>
-    <ol>
-      <% blog.tags.each do |tag, articles| %>
-        <li><a href="<%= tag_path tag %>"><%= tag %> (<%= articles.size %>)</a></li>
-      <% end %>
-    </ol>
-
-    <h2>By Year</h2>
-    <ol>
-      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-        <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
-      <% end %>
-    </ol>
-    </aside>
-
-  </div><!--/span-->
-  <div class="span9">
+<div class="span9">
     <div class="hero-unit">
       <h1>Welcome!</h1>
       <p>This is my humble home on the web. You'll find some information and pictures of my personal projects. Enjoy and let me know if you find errors or want more info about something.</p>
@@ -67,6 +24,5 @@
       </div><!--/span-->
     </div><!--/row-->
   </div><!--/span-->
-</div><!--/row-->
 
 

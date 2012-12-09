@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Word to the Baker</title>>
+    <title>Word to the Baker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Word to the Baker, and props to all the gingerbread makers. This is Dave Cummings' personal page on the web.">
     <meta name="author" content="David Cummings">
@@ -34,12 +34,54 @@
   </head>
 
   <body>
-    <%= partial "header" %> <!-- include the header navbar, title, etc. -->
-    <div class="container-fluid"> 
-    <%= yield %>
+    <%= partial "header" %>
+    <div class="row-fluid">
+  <div class="span2">
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Electronics</li>
+        <li><a href="#">Ham Radio</a></li>
+        <li><a href="#">Business Card</a></li>
+        <li><a href="#">Media Cards</a></li>
+        <li class="nav-header">Motorcycles</li>
+        <li><a href="#">CB700SC</a></li>
+        <li><a href="#">SV650</a></li>
+        <li><a href="#">CBR600F4</a></li>
+        <li><a href="#">HCS KX60</a></li>
+        <li class="nav-header">Fabrication/Art</li>
+        <li><a href="#">Turned Titanium</a></li>
+        <li><a href="#">Lighting</a></li>
+        <li><a href="#">Furniture</a></li>
+      </ul>
+    </div><!--/.well -->
+    <aside>
+    <h2>Recent Articles</h2>
+    <ol>
+      <% blog.articles[0...10].each do |article| %>
+        <li><a href="<%= article.url %>"><%= article.title %></a> <span><%= article.date.strftime('%b %e') %></span></li>
+      <% end %>
+    </ol>
 
+    <h2>Tags</h2>
+    <ol>
+      <% blog.tags.each do |tag, articles| %>
+        <li><a href="<%= tag_path tag %>"><%= tag %> (<%= articles.size %>)</a></li>
+      <% end %>
+    </ol>
+
+    <h2>By Year</h2>
+    <ol>
+      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+        <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
+      <% end %>
+    </ol>
+    </aside>
+
+  </div><!--/span-->
+
+    <%= yield %>
+  </div><!--/row-->
     <%= partial "footer" %>
-  </div>
-  <%= partial "scripts" %>
+    <%= partial "scripts" %> 
   </body>
 </html>
