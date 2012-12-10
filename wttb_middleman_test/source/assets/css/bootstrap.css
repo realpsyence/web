@@ -5732,6 +5732,8 @@ a.badge:hover {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  text-shadow: -1px 0 black, 0 1px black,
+          1px 0 black, 0 -1px black; 
 }
 
 .hero-unit h1 {
@@ -5748,6 +5750,9 @@ a.badge:hover {
   line-height: 30px;
   color: inherit;
 }
+
+.hero-unit front {
+  background-image: url("/assets/img/reflected_me.jpg");
 
 .pull-right {
   float: right;
