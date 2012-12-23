@@ -1,0 +1,54 @@
+<div class="span9">
+  <h2>PA3AKE H-Mode Front End</h2>
+  <p>Martein Bakker - PA3AKE - has designed an incredibly high performance receiver front-end for ham radio that 
+  utilizes an advanced H-mode mixer. I purchased a set of PCBs and Quartz Crystal filters from him last March, and this
+  November I finally got around to updating the Bill of Materials to reflect currently available parts.</p>
+  <p>Read about the front-end at Martein's page here: <a href="http://martein.home.xs4all.nl/pa3ake/hmode/">H-Mode Mixer Frontend</a></p>
+  <p>I hope to describe the build as it progresses, but in the meantime, I'm making the updated BOM available 
+  here as Excel spreadsheets with part numbers for Digikey and Mouser - two large distributors here in the US. 
+  Hopefully this information will make it easier to find all the parts needed to complete the front-end.</p>
+  <p>Currently, the biggest missing piece is the Local Oscillator - if I can find the time and motivation, I hope 
+  to complement Martein's work on an AD9910 board, with one using the AD9914. The performance trade-off is not 
+  clear to me, and it may be a futile effort, but the incredible speed of the AD9914 makes it interesting for 
+  other work at higher frequencies.</p>
+  <h4>Parts Lists</h4>
+  <p> I have tried to follow as closely as possible the organization Martein lays out on his page - thus making it easy to find
+  the correct BOM for the board of interest.</p>
+  <p>Right-click and save as to download the .xlsx files</p>
+  <ul>
+    <li><h5>Frontend Subsystem</h5></li>
+    <ul>
+      <li>Bandpass Filters</li>
+      <ul>
+        <li><a href="../projects/PA3AKE/Motherboard_RevB_Partlist.xlsx">Motherboard</a>
+        <p>The motherboard has mainly connectors on it, as it hosts the individual bandpass boards as well as the 
+        I2C, Attenuator, and IF notch boards.</p>
+        </li>
+        <li><a href="../projects/PA3AKE/I2C_RevB_Partlist.xlsx">I2C Controller</a></li>
+        <li><a href="../projects/PA3AKE/Attenuator_RevB_Partlist.xlsx">Attenuator board</a></li>
+        <li>The individual band pass filters</li>
+        <ul>
+          <li><a href="../projects/PA3AKE/160m_BPF_RevB_Partlist.xlsx">160m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/80m_BPF_RevB_Partlist.xlsx">80m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/40m_BPF_RevB_Partlist.xlsx">40m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/30m_BPF_RevB_Partlist.xlsx">30m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/20m_BPF_RevB_Partlist.xlsx">20m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/17m_BPF_RevB_Partlist.xlsx">17m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/15m_BPF_RevB_Partlist.xlsx">15m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/12m_BPF_RevB_Partlist.xlsx">12m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/10m_BPF_RevB_Partlist.xlsx">10m Bandpass Filter</a></li>
+          <li><a href="../projects/PA3AKE/6m_BPF_RevB_Partlist.xlsx">6m Bandpass Filter</a></li>
+        </ul>
+        <li><a href="../projects/PA3AKE/Bandpass_Notch_RevB_Partlist.xlsx">IF notch Filter</a></li>
+      </ul>
+      <li><a href="../projects/PA3AKE/Frontend_Board_RevB.xlsx">Frontend Board</a><p>The single frontend board contains both
+      the H-Mode mixer itself and the quartz crystal roofing filters</p></li>
+    </ul>
+    <li><h5>IF Subsystem</h5></li>
+    <ul>
+      <li>Selectivity Board</li>
+      <li>Variable Gain Board</li>
+      <li>Detector Board</li>
+    </ul>
+  </ul>
+</div>
