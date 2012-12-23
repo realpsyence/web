@@ -1,0 +1,51 @@
+---
+title: Making NYC a better place
+date: 2012-11-20
+time: 15:12
+tags: NYC,DOT
+---
+<div class="span9">
+<p>
+Today I witnessed a most amazing thing. Some would call it beureaucratic ineptitude,
+others, a passion for perfection. </p>
+<p>
+Here's the rundown: recently the elevated track near my office (The #7 MTA train) has been
+in the process of being replaced. When they need to do this, the MTA shuts down the streets 
+around the area and uses the one you see in the photos for their staging area...
+</p><p>
+That is to say they pull the really big trucks in here and load and unload the track. 
+Well, big trucks or small, they don't like running over signs, and so they cut them down 
+to get them out of the way, and bolt them back on when they're done. </p>
+<p>
+Apparently that's not the DOT way, so today I witnessed the DOT correcting the discrepancy.
+</p><p>
+Two men with jackhammers and new sign posts came and removed the old signs, carefully relocated the attached 
+bicycles, dug out the stump, and replaced and reconcreted new signposts as well as their respective cycles.i
+</p>
+<div id="myCarousel" class="carousel slide">
+<div class="carousel-inner">
+<div class="item active">
+<img src="/assets/img/DOT/DSC_4360.JPG" alt="">
+<div class="carousel-caption">
+ <h4>Step 1: Unbolt the old post</h4>
+  </div>
+   </div>
+   <div class="item">
+   <img src="/assets/img/DOT/DSC_4362.JPG" alt="">
+   <div class="carousel-caption">
+   <h4>Step 2: jackhammer out the stump</h4>
+  </div>
+  <div class="item">
+   <img src="/assets/img/DOT/DSC_4364.JPG" alt="">
+  <div class="carousel-caption">
+  <h4>Step 3: put it all back together, good as new...</h4>
+<p>This the other side, the bike's back on the new post, unaware of the 
+destruction underneath it. </p>
+ </div>
+</div>
+ </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+ </div>
+ </div>
+</div>

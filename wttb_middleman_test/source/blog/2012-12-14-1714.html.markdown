@@ -1,0 +1,15 @@
+---
+title: A merry old time 
+date: 2012-12-14
+time: 17:15
+tags: personal
+---
+
+<h2>Ho ho ho and a bottle of rum for me!</h2>
+<p>
+Just some personal musings - it is Holiday time (with a capital H) and I am heading 
+ to Baltimore for our company party. Bets on who will stumble out with the highest BAC?
+ If I eat, won't be me, but should be exciting nonetheless. Will we get bonuses? Is the
+  company doomed? It's anyone's guess, though our best says we'll survive the winter
+  and get another round in in NYC. Stay tuned for more fun stuff from here...
+  </p>
