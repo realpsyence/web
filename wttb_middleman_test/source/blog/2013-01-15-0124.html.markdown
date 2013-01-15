@@ -1,0 +1,341 @@
+---
+title: OCD, some wood for me
+date: 2013-01-15
+time: 01:24
+tags: python, OCD
+---
+<div class="span9">
+<p>
+I can be a little OCD sometimes. Maybe just obsessive, I'd probably be cleaner if I was really OCD. ANYWHO - I've been giving some 
+thought to making a toolchest. Right now it's just thought as it would take a lot of time and effort and some cash and I'm short on 
+most at this stage. POINT IS - a nice toolchest is made of wood. One of my obsessions is materials, and their engineering properties - i.e. 
+elastic modulus, density, e.g. strenght to weight ratio. Looking up some strong yet light woods (because toolchests are heavy as balls 
+empty, I came upon Sitka Spruce, but it was hard to qualify.   
+</p><p>
+I found the <a href="http://www.wood-database.com/">Wood Database</a>,
+probably the cleanest prettiest site out there
+ with data on wood. Yes, MatWeb has info, as do a lot of other places, but this one is pretty. BUT - the information was poorly organized for 
+ my purposes. There was no way to list or sort by property.   
+</p><p>
+So...I found <a href="http://www.scrapy.org">Scrapy</a>, and 6 hours later I had re-learned a lot of python and maybe some regular expressions 
+ (though, to be fair, I stil don't know them -- really, at all), and had produced this 
+ <a href="/assets/output.csv">csv file</a> which while not pretty, is parseable by say, OpenOffice Calc and I can create a new column for 
+ Elastic Modulus divided by Density, or an approximate version of strength to weight ratio. Check this out:
+
+<table border="0" cellspacing="0" cellpadding="0">
+<colgroup>
+<col width="131"/>
+<col width="343"/>
+<col width="399"/>
+</colgroup>
+<tr>
+<td>
+<p>EM/density
+</p>
+</td>
+<td>
+<p>latin
+</p>
+</td>
+<td>
+<p>name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+84193.55
+
+</td>
+<td>
+ Hundreds of species from the Poaceae family
+
+</td>
+<td>
+ Bamboo
+
+</td>
+</tr>
+<tr>
+<td>
+62269.23
+
+</td>
+<td>
+ Abies procera
+
+</td>
+<td>
+ Noble Fir
+
+</td>
+</tr>
+<tr>
+<td>
+62259.26
+
+</td>
+<td>
+ Abies amabilis
+
+</td>
+<td>
+ Pacific Silver Fir
+
+</td>
+</tr>
+<tr>
+<td>
+57142.86
+
+</td>
+<td>
+ Picea sitchensis
+
+</td>
+<td>
+ Sitka Spruce
+
+</td>
+</tr>
+<tr>
+<td>
+57115.38
+
+</td>
+<td>
+ Abies concolor
+
+</td>
+<td>
+ White Fir
+
+</td>
+</tr>
+<tr>
+<td>
+56758.62
+
+</td>
+<td>
+ Chamaecyparis lawsoniana
+
+</td>
+<td>
+ Port Orford Cedar, Lawson’s Cypress
+
+</td>
+</tr>
+<tr>
+<td>
+56303.03
+
+</td>
+<td>
+ Chlorocardium rodiei (syn. Ocotea rodiei)
+
+</td>
+<td>
+ Greenheart
+
+</td>
+</tr>
+<tr>
+<td>
+56240.00
+
+</td>
+<td>
+ Picea abies
+
+</td>
+<td>
+ Norway Spruce, European Spruce, German Spruce
+
+</td>
+</tr>
+<tr>
+<td>
+56206.90
+
+</td>
+<td>
+ Tsuga heterophylla
+
+</td>
+<td>
+ Western Hemlock
+
+</td>
+</tr>
+<tr>
+<td>
+55517.24
+
+</td>
+<td>
+ Picea rubens
+
+</td>
+<td>
+ Red Spruce, Adirondack Spruce
+
+</td>
+</tr>
+<tr>
+<td>
+55480.00
+
+</td>
+<td>
+ Abies balsamea
+
+</td>
+<td>
+ Balsam Fir
+
+</td>
+</tr>
+<tr>
+<td>
+55159.09
+
+</td>
+<td>
+ Pinus merkusii
+
+</td>
+<td>
+ Sumatran Pine, Merkus Pine
+
+</td>
+</tr>
+<tr>
+<td>
+55151.52
+
+</td>
+<td>
+ Magnolia acuminata
+
+</td>
+<td>
+ Cucumbertree, Cucumber Magnolia
+
+</td>
+</tr>
+<tr>
+<td>
+55040.00
+
+</td>
+<td>
+ Bagassa guianensis
+
+</td>
+<td>
+ Tatajuba
+
+</td>
+</tr>
+<tr>
+<td>
+55000.00
+
+</td>
+<td>
+ Gonystylus spp.
+
+</td>
+<td>
+ Ramin
+
+</td>
+</tr>
+<tr>
+<td>
+54925.93
+
+</td>
+<td>
+ Abies magnifica
+
+</td>
+<td>
+ California Red Fir
+
+</td>
+</tr>
+<tr>
+<td>
+54642.86
+
+</td>
+<td>
+ Abies grandis
+
+</td>
+<td>
+ Grand Fir
+</td>
+</tr>
+<tr>
+<td>
+54074.07
+</td>
+<td>
+ Tilia americana
+</td>
+<td>
+ Basswood, American Basswood, Lime, Linden
+</td>
+</tr>
+<tr>
+<td>
+54074.07
+</td>
+<td>
+ Pinus monticola
+</td>
+<td>
+ Western White Pine, Idaho White Pine
+</td>
+</tr>
+<tr>
+<td>
+53666.67
+</td>
+<td>
+ Picea mariana
+</td>
+<td>
+ Black Spruce
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<colgroup>
+<col width="99"/>
+</colgroup>
+<tr>
+<td> 
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<colgroup>
+<col width="99"/>
+</colgroup>
+<tr>
+<td> 
+</td>
+</tr>
+</table>
+</p><p>
+Note, bamboo's kinda a dicey one because it's not really available in boards (for my purposes) and it varies a lot. But there's the top 20,
+with Sitka right near the top, along with a few surprises. One that I think I'll keep in mind is Greenheart - apparently very 
+water-resistant, and incredibly stiff, even though it's far denser than its neighbors. Perfect stuff for skirt boards methinks?
+</p><p>
+...addendum, if I feel up to it tomorrow I'll link to the source for the spider and maybe update this table with links to the databse...
+</p>
+</div>
