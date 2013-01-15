@@ -7,7 +7,8 @@ tags: NYC,DOT
 <div class="span9">
 <p>
 Today I witnessed a most amazing thing. Some would call it beureaucratic ineptitude,
-others, a passion for perfection. </p>
+others, a passion for perfection. 
+</p>
 <p>
 Here's the rundown: recently the elevated track near my office (The #7 MTA train) has been
 in the process of being replaced. When they need to do this, the MTA shuts down the streets 
@@ -20,7 +21,7 @@ to get them out of the way, and bolt them back on when they're done. </p>
 Apparently that's not the DOT way, so today I witnessed the DOT correcting the discrepancy.
 </p><p>
 Two men with jackhammers and new sign posts came and removed the old signs, carefully relocated the attached 
-bicycles, dug out the stump, and replaced and reconcreted new signposts as well as their respective cycles.i
+bicycles, dug out the stump, and replaced and reconcreted new signposts as well as their respective cycles.
 </p>
 <div id="myCarousel" class="carousel slide">
 <div class="carousel-inner">
