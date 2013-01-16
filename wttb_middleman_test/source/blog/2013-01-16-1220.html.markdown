@@ -1,0 +1,65 @@
+---
+title: Scrapin' on my Scrapyer
+date: 2013-01-16
+time: 12:20
+tags: python
+---
+
+Ok, posted my super ugly adaptation of the <a href="http://www.scrapy.org">Scrapy</a> 
+demo code - up here on my <a href="http://github.com/realpsyence/database_crawler/">github</a>
+ - now, question for you python folks. No one reads this as of yet, but I'm putting this out there 
+ so future admirers can admire how simple I was. 
+
+ You see, Scrapy uses these Item classes, kinda like Django's something or other, apparently, which in turn
+are python dicts? Well, that's fine, so I have an Item with a bunch of things in it's dict..., like so:
+
+    from scrapy.item import Item, Field
+
+    class WoodDbItem(Item):
+        name = Field()
+        latin = Field()
+        distribution = Field()
+        size = Field()
+        density = Field()
+        sg = Field()
+        janka = Field()
+        MoR = Field()
+        EM = Field()
+        crush_strength = Field()
+        shrink = Field()
+
+And, lo and behold, that's the exact same ordering it shows up as on the wood database pages. Hmm, which came first I wonder?
+
+So, I really wanted to do something like (psuedocode)
+
+    for i in extracted_fields_from_page
+      newWoodDbItem[index_corresponding_to_i] = i
+
+But apparently dicts are unordered in python, and even though that was the order I set it up as, there was no guarantee that was 
+the order I was going to get. Fine. But then I was faced with the option of double looping or spelling it out for python, so I chose
+ the latter, since I had all of 10 fields. But is there a better way?
+
+    description = hxs.select('//td/p[@style="text-align: left;"]').extract()
+    for i in description:
+      values.append(re.split(':', remove_tags(i))[1])
+    DBitem['name'] = values[0]
+    DBitem['latin'] = values[1]
+    DBitem['distribution'] = values[2]
+    DBitem['size'] = values[3]
+    DBitem['density'] = values[4].split()[0]
+    DBitem['sg'] = values[5]
+    DBitem['janka'] = values[6]
+    DBitem['MoR'] = values[7]
+    DBitem['EM'] = values[8].split()[0]
+    DBitem['crush_strength'] = values[9]
+    DBitem['shrink'] = values[10]
+
+...cuz that's pretty ugly to me...especially since I know the right side is always in that order (for all cases of always in the next 
+few days, it's not my site after all...)
+
+Anyway, thought I'd share. I was confused. This is also after spending a loong time trying to find a regex that would give me everything
+from the start of a string until a colon (duh, that's a delimiter, use split() dummy). So I was ready to quit...
+
+Further improvements to the scraper - it would be neat to preserve the links back to the pages if I was going to put a sortable version 
+up on the web. Obviously that would require me to figure out how to put a sortable version up on the web...
+

@@ -92,6 +92,7 @@
 }
 
 @media (min-width: 1200px) {
+
   .row {
     margin-left: -30px;
     *zoom: 1;

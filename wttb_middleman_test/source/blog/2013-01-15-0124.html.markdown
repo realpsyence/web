@@ -10,7 +10,7 @@ I can be a little OCD sometimes. Maybe just obsessive, I'd probably be cleaner i
 thought to making a toolchest. Right now it's just thought as it would take a lot of time and effort and some cash and I'm short on 
 most at this stage. POINT IS - a nice toolchest is made of wood. One of my obsessions is materials, and their engineering properties - i.e. 
 elastic modulus, density, e.g. strenght to weight ratio. Looking up some strong yet light woods (because toolchests are heavy as balls 
-empty, I came upon Sitka Spruce, but it was hard to qualify.   
+empty), I came upon Sitka Spruce, but it was hard to qualify.   
 </p><p>
 I found the <a href="http://www.wood-database.com/">Wood Database</a>,
 probably the cleanest prettiest site out there
@@ -310,15 +310,6 @@ So...I found <a href="http://www.scrapy.org">Scrapy</a>, and 6 hours later I had
 </td>
 <td>
  Black Spruce
-</td>
-</tr>
-</table>
-<table border="0" cellspacing="0" cellpadding="0">
-<colgroup>
-<col width="99"/>
-</colgroup>
-<tr>
-<td> 
 </td>
 </tr>
 </table>
