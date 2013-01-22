@@ -1,0 +1,14 @@
+---
+title: Wi-Fi - 13+hr follow-up
+date: 2013-01-22
+time: 11:34
+tags: wi-fi, linux
+---
+
+In a tiny twinge of irony, I lost connectivity approximately 30min after
+last night's post - this time I rmmod'd and modprobe'd and checked my
+values - I did have to reset the tx-power to 0, and make sure the rate
+was set to auto. Interestingly, the rate has auto-set itself back to 54M
+overnight, and it's still up, 13 hours later, having uploaded 10.9GiB.
+Who knows what the future holds. I still hate Wi-Fi on Linux sadly, and
+may have to write a cron-job to check and reset the adapter if needed. 
