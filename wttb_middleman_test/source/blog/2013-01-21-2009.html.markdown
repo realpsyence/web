@@ -1,0 +1,20 @@
+---
+title: Counterintuitive Wi-Fi 
+date: 2013-01-21
+time: 20:09
+tags: wi-fi, linux
+---
+
+On good recommendation from a friend, I bought an ALFA AWUS036H wi-fi
+adapter and use it with my desktop, which was previously wireless-less.
+All well and good, except that every so often the adapter disconnects
+from the network and I need to either rmmod and modprobe the rtl8187
+module -- or do what I usually do and unplug the damn thing and it works
+perfectly on replugging seconds later. 
+
+Well, I decided to look into it a bit, and didn't find much, but am
+conducting a test overnight and will report back. In the meantime, I
+found that reducing my tx-power to 0dBm (from 20) and setting my rate to
+11M auto, seems to have doubled my upload speed (to DropBox, the source
+of my aforementioned test), and reduced my rate of misc errors shown
+in iwconfig. Magic...
