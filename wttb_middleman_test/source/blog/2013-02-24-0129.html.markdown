@@ -1,0 +1,22 @@
+---
+title: Pre-Spring Cleaning 
+date: 2013-02-24
+time: 01:29
+tags: personal
+---
+
+THIS IS NEWS
+=============
+
+So basically, I decided to do some work on the website, seeing as it had been a *month* since I 
+touched it. So, news, I'm using a theme that someone better than graphics design than I did, 
+notably Spruce from [BootSwatch](http://bootswatch.com/spruce/) - I think it looks better. 
+
+Still undecided on light vs. dark, but cleaning stuff up so as to use more generic bootstrap makes
+sense. Check out the [sorted wood entry](/blog/2013-01-15-0124) for an example of niceness (striped tables.)
+
+That, and I spent about 6 hours the other day learning LaTeX enough to get a resume I'm happy with.
+Check it out on the About page if you're so inclined. Obviously, get in touch if you think I can help 
+you out, or vice-versa.
+
+Also, there is discussion of switching webhosts. Hmm, thoughts?
