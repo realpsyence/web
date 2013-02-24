@@ -22,7 +22,7 @@ So...I found <a href="http://www.scrapy.org">Scrapy</a>, and 6 hours later I had
  <a href="/assets/output.csv">csv file</a> which while not pretty, is parseable by say, OpenOffice Calc and I can create a new column for 
  Elastic Modulus divided by Density, or an approximate version of strength to weight ratio. Check this out:
 
-<table border="0" cellspacing="0" cellpadding="0">
+<table border="0" cellspacing="0" cellpadding="0" class="table table-bordered table-striped table-hover">
 <colgroup>
 <col width="131"/>
 <col width="343"/>

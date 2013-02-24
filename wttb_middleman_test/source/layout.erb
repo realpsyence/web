@@ -19,6 +19,7 @@
       }
     </style>
     <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!--    <link href="/assets/css/darkstrap.css" rel="stylesheet"> -->
 
     <!--  html5 shim for IE bullshit -->
     <!--[if lt IE 9]>
@@ -35,6 +36,89 @@
    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
    })();
+
+ </script>
+<!-- PDFObject -->
+<script type="text/javascript" src='/assets/js/pdfobject.min.js'>
+
+<script type="text/javascript">
+
+
+  /*
+
+     PDFObject returns a reference to the JavaScript object (pseudo 'class' instance).
+     PDFObject.embed() returns a reference to the embedded HTML <object>.
+
+     Knowing this, we store the references in two separate variables and perform
+     actions with them.  For this example, We'll store the PDFObject obj in 'pObj'
+     and the HTML object in htmlObj.
+
+   */
+
+var pObj = new PDFObject({ 
+
+url: "/assets/david_cummings_resume.pdf",
+id: "myPDF",
+
+pdfOpenParams: {
+
+navpanes: 0,
+toolbar: 0,
+statusbar: 0,
+view: "FitV"
+
+}
+
+});
+
+//Note: the PDF has NOT been embedded yet because .embed() has not been invoked.
+
+
+function embed(){
+
+  var s = document.getElementById("statement");
+  var msg;
+
+  document.getElementById("pdf").className = "embedded";  //Style the DIV
+
+  var htmlObj = pObj.embed("pdf");  //Returns a reference to the HTML <object> or null if unsuccessful
+
+  if(htmlObj){
+    msg = "The PDF was successfully embedded!";
+    s.className = "success";
+  } else {
+    msg = "It appears the embed didn't work.";
+    s.className = "fail";
+  }
+
+  s.innerHTML = msg;
+
+}
+
+
+window.onload = function (){
+
+  var s = document.getElementById("statement");
+  var msg;
+
+  if(pObj){
+
+    var plugintype = pObj.get("pluginTypeFound");
+    msg = "Type of PDF plugin found: " +plugintype;
+
+    if(plugintype){
+      msg += "<br/><a href='#' onclick='embed(); return false;'>Click here to embed the PDF!</a>";
+    } else {
+      msg += "<br/>Looks like we won't be able to embed your PDF!  Doh!";
+      s.className = "fail";
+    }
+
+  }
+
+  s.innerHTML = msg;
+
+
+};
 
 </script>
     <!-- Le fav and touch icons -->
