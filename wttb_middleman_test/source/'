@@ -1,8 +1,8 @@
 <% wrap_layout :layout do %>
-  <div class="span8">
-    <%= yield %>
-  </div>
-    <div class="span2">
+  <div class="span9"> 
+  <%= yield %>
+</div>
+<div class="span3">
   <div class="well sidebar-nav">
     <h2>Recent Articles</h2>
     <ol>
@@ -25,6 +25,5 @@
       <% end %>
     </ol>
   </div>
-</div>
 </div>
 <% end %>

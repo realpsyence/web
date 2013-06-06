@@ -1,0 +1,17 @@
+  <div class="hero-unit">
+    <h2>Seldom Updated,<br/>Rarely Repeated...</h2>
+  </div>
+  <% blog.articles[0...5].each do |article| %>
+        <article>
+        <h3>
+          <a href="<%= article.url %>"><%= article.title %></a>
+          <time><%= article.date.strftime('%b %e %Y') %></time>
+        </h3>
+
+        <%= article.summary %>
+
+        <a href="<%= article.url %>">Read more</a>
+      </article>
+<% end %>
+
+

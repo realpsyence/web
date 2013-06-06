@@ -1,0 +1,30 @@
+---
+title: My First HF Ham Radio Receiver 
+date: 2013-06-06
+time: 11:28
+tags: hf ham radio receiver diy homebrew
+---
+
+I recently built a few audio amplifiers from kits and started to design a 
+"junkbox" amplifier from parts we had in the lab. This lead to a search on
+homebrew construction techniques because I really didn't want to use perfboard.
+
+A search for manhattan construction lead me to Chuck Adams, K7QO's pages and 
+thereby to the QRP-Tech mailing list. I put the junkbox amp aside for the 
+moment while I decided to do the first in a series of projects Chuck has 
+selected for the group.
+
+Project 000 is to build a version of the Wes Hayward, W7ZOI IC Based Direct
+Conversion Receiver from chapter 1 of Experimental Methods in RF Design.
+
+You can get more info on my build [here](/projects/ham_radio/Project_000.html), 
+but a quick picture shows how I decided to put it together:
+![W7ZOI Simple DC Rx by AB3LM](http://farm3.staticflickr.com/2836/8905861137_18e6760f38_b.jpg)
+All surface mount, in a version of what Chuck has been calling MUPPET construction.
+
+Anyway, it works after some tweaking, and has boosted my confidence in 
+homebrewing and reinvigorated my interest in ham. I'm making progress on the 
+[H-Mode Front End](/projects/PA3AKE) and will be updating with more info on my 
+purchasing and build progress.
+
+Now, to make another BoM spreadsheet and Digi-Key order...
