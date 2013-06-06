@@ -6,8 +6,9 @@ tags: personal
 ---
 
 
-THIS IS NEWS
-=============
+
+#### THIS IS NEWS
+
 
 So basically, I decided to do some work on the website, seeing as it had been a *month* since I 
 touched it. So, news, I'm using a theme that someone better than graphics design than I did, 
@@ -21,4 +22,5 @@ Check it out on the About page if you're so inclined. Obviously, get in touch if
 you out, or vice-versa.
 
 Also, there is discussion of switching webhosts. Hmm, thoughts?
+
 

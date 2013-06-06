@@ -2,8 +2,13 @@
 title: My First HF Ham Radio Receiver 
 date: 2013-06-06
 time: 11:28
-tags: hf ham radio receiver diy homebrew
+tags: hf,ham,radio,receiver,diy,homebrew
 ---
+
+
+
+#### My First Receiver, on 40m
+
 
 I recently built a few audio amplifiers from kits and started to design a 
 "junkbox" amplifier from parts we had in the lab. This lead to a search on
@@ -20,6 +25,7 @@ Conversion Receiver from chapter 1 of Experimental Methods in RF Design.
 You can get more info on my build [here](/projects/ham_radio/Project_000.html), 
 but a quick picture shows how I decided to put it together:
 ![W7ZOI Simple DC Rx by AB3LM](http://farm3.staticflickr.com/2836/8905861137_18e6760f38_b.jpg)
+
 All surface mount, in a version of what Chuck has been calling MUPPET construction.
 
 Anyway, it works after some tweaking, and has boosted my confidence in 
@@ -28,3 +34,5 @@ homebrewing and reinvigorated my interest in ham. I'm making progress on the
 purchasing and build progress.
 
 Now, to make another BoM spreadsheet and Digi-Key order...
+
+
