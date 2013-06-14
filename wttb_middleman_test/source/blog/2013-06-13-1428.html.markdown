@@ -1,0 +1,123 @@
+---
+title: Quick Notes on Component Organization
+date: 2013-06-13
+time: 11:28
+tags: diy,homebrew,electronics,organization,akro-mils,adafruit,smd
+---
+
+
+
+#### Getting (my electronic components) Organized
+
+It's been a year and a half since we started Sensorstar LABS and we've done a 
+fair amount of hardware since then, but I've never felt like we came anywhere
+close to having a solid prototyping set-up. 
+
+I personally have never really had a good home lab, and between a resurgence of 
+interest in analog (audio + RF mainly) and a lack of interest in hardware projects 
+at the LABS, I felt it was time.
+
+I'll detail more when I get it set up, but wanted to make a quick post on some ideas
+about organizing components. 
+
+One of my co-workers uses 3-ring binders with card pages, filled with bags of components.
+Pluses for the binder system:
+- very compact - doesn't take up a lot of space
+- easy to add to 
+- relatively easy to reorganize (at least on a sheet-by-sheet basis)
+
+Cons as I see them:
+- no idea what you have without flipping through the book (without maintaing an external list)
+- limited to small components - SMD and most axial lead compnents are great, 
+  TO-220 and up are pushing it. No large inductors or power transistors here.
+
+At the lab in Baltimore one of the older techs was a big fan of the little pull-out drawers.
+I've since seen how handy they can be for mechanical components as well, and I really like 
+the visual of an array of tiny drawers all neatly arranged.
+Pluses for the drawer system:
+- Easy to find compnents at a glance, especially if the cabinets are organized well. 
+  Additionally if the drawers are clear you can tell approximately how many of something you have.
+- Room for larger components, the smallest drawers are deep enough to fit pens and handle
+  large potentiometers, small transformers, etc. with ease.
+- Can be wall-mounted to free up space on your bench.
+
+Cons as I see them:
+ - generally take up more room. Sure you can fit more stuff in each drawer, but they're pretty big.
+ - more difficult to extend/rearrange. Suppose you have a row of values and you 
+  add a new one somewhere inbetween, you may have to move all the drawers. This can 
+  get laborious. 
+- more expensive
+- chance of flinging components everywhere when removing a drawer  
+
+
+Having said all that, I decided to go with the Akro-Mils 101** series of drawers. 
+I got mine from [Amazon](http://www.amazon.com/Akro-Mils-10164-Plastic-Storage-Hardware/dp/B000LDH3JC/), 
+one each of 24, 44, and 64 drawers - there are two drawer sizes. 
+I'm just really hooked on finding stuff quickly, and knowing what I have at a glance.
+I am however, adding a few things to try and stay organized as I build up the collection.
+
+The first is just a spreadsheet. I have maybe 200 different parts right now, with another hundred 
+on the way as I build up an N2PK VNA and the receiver. I've got some time right 
+now and felt this was a reasonable amount to catalog, so long as I'm diligent about updating
+the sheet. 
+
+Part two is an SMD solution in the form of these little spring top boxes from [Adafruit](http://www.adafruit.com/category/54_152).
+I figured they'd fit in the drawers, and give me a little more granularity. 
+I think even the smallest boxes will fit a couple hundred 0805 parts, we'll see 
+next week when I get my latest Digi-Key order. I like the idea of having one 
+drawer per value with different tolerances, ratings, and packages together but 
+separate. 
+
+<div id="AdafruitBoxes" class="carousel slide">
+<div class="carousel-inner">
+<div class="item active">
+<img src="http://farm6.staticflickr.com/5521/9043518881_dd86879716_b.jpg" alt="">
+<div class="carousel-caption">
+ <h4>This is what $100 gets you in snap-top boxes.</h4>
+ <p>Yes, you can probably get them cheaper, but cmon, it's adafruit! The black
+ tiny boxes are static dissipative, so those will be for SMT ICs. Not sure if I'll 
+ need the larger boxes, but got some to play with.</p>
+  </div>
+   </div>
+   <div class="item">
+   <img src="http://farm8.staticflickr.com/7416/9045750468_b8f47593be_b.jpg" alt="">
+   <div class="carousel-caption">
+   <h4>Yay! They fit.</h4>
+   <p>Obviously, I didn't pay attention to the sizing, so I was happy when they fit.
+   Two tinys and a small fit in the small drawer...</p>
+  </div>
+  </div>
+  <div class="item">
+   <img src="http://farm6.staticflickr.com/5480/9045752968_f26bb5e58a_b.jpg" alt="">
+  <div class="carousel-caption">
+  <h4>...</h4>
+<p>or five smalls</p></div>
+</div>
+   <div class="item">
+   <img src="http://farm4.staticflickr.com/3702/9045755370_dab8c0c16c_b.jpg" alt="">
+  <div class="carousel-caption">
+  <h4>Lots of room!</h4>
+<p>The sizing works even better in the big drawers, here's two larges, two smalls, and 
+four tinies...</p> 
+</div>
+</div>
+ <div class="item">
+   <img src="http://farm8.staticflickr.com/7420/9045757808_6f587a76dc_b.jpg" alt="">
+  <div class="carousel-caption">
+  <h4>...</h4>
+  <p>Four mediums also fit in the big drawers.</p>
+</div>
+</div>
+ <div class="item">
+   <img src="http://farm3.staticflickr.com/2811/9043521751_1a8ea74675_b.jpg" alt="">
+  <div class="carousel-caption">
+  <h4>It's a start!</h4>
+</div>
+</div>
+ </div>
+  <a class="left carousel-control" href="#AdafruitBoxes" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#AdafruitBoxes" data-slide="next">&rsaquo;</a>
+ </div>
+
+Pretty excited about this. More to come on the equipment, and I still have to 
+figure out a bench situation...
