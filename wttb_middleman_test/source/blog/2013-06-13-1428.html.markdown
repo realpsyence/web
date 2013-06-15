@@ -21,33 +21,39 @@ I'll detail more when I get it set up, but wanted to make a quick post on some i
 about organizing components. 
 
 One of my co-workers uses 3-ring binders with card pages, filled with bags of components.
+
 Pluses for the binder system:
-- very compact - doesn't take up a lot of space
-- easy to add to 
-- relatively easy to reorganize (at least on a sheet-by-sheet basis)
+
+  * very compact - doesn't take up a lot of space
+  * easy to add to 
+  * relatively easy to reorganize (at least on a sheet-by-sheet basis)
 
 Cons as I see them:
-- no idea what you have without flipping through the book (without maintaing an external list)
-- limited to small components - SMD and most axial lead compnents are great, 
-  TO-220 and up are pushing it. No large inductors or power transistors here.
 
-At the lab in Baltimore one of the older techs was a big fan of the little pull-out drawers.
+  * no idea what you have without flipping through the book (without maintaing an external list)
+  * limited to small components - SMD and most axial lead compnents are great, 
+    TO*220 and up are pushing it. No large inductors or power transistors here.
+
+At the lab in Baltimore one of the older techs was a big fan of the little pullout drawers.
 I've since seen how handy they can be for mechanical components as well, and I really like 
 the visual of an array of tiny drawers all neatly arranged.
+
 Pluses for the drawer system:
-- Easy to find compnents at a glance, especially if the cabinets are organized well. 
+
+* Easy to find compnents at a glance, especially if the cabinets are organized well. 
   Additionally if the drawers are clear you can tell approximately how many of something you have.
-- Room for larger components, the smallest drawers are deep enough to fit pens and handle
+* Room for larger components, the smallest drawers are deep enough to fit pens and handle
   large potentiometers, small transformers, etc. with ease.
-- Can be wall-mounted to free up space on your bench.
+* Can be wall-mounted to free up space on your bench.
 
 Cons as I see them:
- - generally take up more room. Sure you can fit more stuff in each drawer, but they're pretty big.
- - more difficult to extend/rearrange. Suppose you have a row of values and you 
+
+* generally take up more room. Sure you can fit more stuff in each drawer, but they're pretty big.
+* more difficult to extend/rearrange. Suppose you have a row of values and you 
   add a new one somewhere inbetween, you may have to move all the drawers. This can 
   get laborious. 
-- more expensive
-- chance of flinging components everywhere when removing a drawer  
+* more expensive
+* chance of flinging components everywhere when removing a drawer  
 
 
 Having said all that, I decided to go with the Akro-Mils 101** series of drawers. 
