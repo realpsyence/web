@@ -26,7 +26,7 @@ diodes. I debated getting some boards professionally fabricated, but inspired
 by the fine folks who regularly do fine pitch SMT boards at home, I chose 
 to test the limits of my laser printer -> laminator -> etchant setup.
 
-###### Etching
+##### Etching
 
 <div id="Etching" class="carousel slide">
 <div class="carousel-inner">
@@ -91,19 +91,124 @@ point I was happy with the etch so I decided to build it up.</p>
 <a class="right carousel-control" href="#Etching" data-slide="next">&rsaquo;</a>
 </div>
 
-###### Build and Test
+
+##### Build and Test
 
 I was at a sort of crossroads after etching this board. The plan is to have 
 two multiplier stages, the first an x5 from the 100MHz OCXO output to 500MHz.
 The output of the first multiplier then gets amplified and sent to another NLTL 
 to get an x7 output at 3.5GHz. Somewhere along the line I didn't pay attention
 and got two different sizes for the inductors for each stage, so technically 
-I should re-do the layout for the 0402 inductors. 
+I should re-do the layout for the 0402 inductors I have for the first stage. 
 
 However, in the interest of testing my layout, concept, test equipment, etc.,
 I went ahead and built up the NLTL for the 2nd stage, and tried it out with 
 the 100MHz signal. 
 
+<div id="Build" class="carousel slide">
+<div class="carousel-inner">
+<div class="item active">
+<img src="http://farm8.staticflickr.com/7358/9146602979_b1bbed75d1_b.jpg">
+<div class="carousel-caption">
+<h4>Phew!</h4>
+<p>No reflow capabilities at the moment which makes life interesting. The diodes 
+only have contact on the bottom, so I tinned each pad and then reflowed while 
+pushing with the tip of the iron. At least it looks cool.</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm4.staticflickr.com/3801/9146598779_9f57b889a2_b.jpg">
+<div class="carousel-caption">
+<h4>All Done</h4>
+<p>The final version won't be connectorized, but I really wanted to test and 
+this gives me flexibility. Had to shim the connectors because this is 0.032 
+thick board and they're made for 0.068. You'll also notice a 2k&Omega; resistor
+between the signal and groundplane. This should allow the line to self-bias 
+due to rectified voltage.</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm6.staticflickr.com/5542/9146593545_d80032d396_b.jpg">
+<div class="carousel-caption">
+<h4>:-)</h4>
+</div>
+</div>
+<div class="item">
+<img src="http://farm3.staticflickr.com/2882/9146583759_4c@ce7db5_b.jpg">
+<div class="carousel-caption">
+<h4>Test Setup</h4>
+<p>Kind of a kludgy setup, surplus OCXO powered by an unregulated wall-wart 
+(massive transformer though...) through an LM7812. Should throw a heatsink 
+on the regulator, but this was a quick hack.</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm8.staticflickr.com/7337/9148777582_756b894e09_b.jpg">
+<div class="carousel-caption">
+<h4>Success!</h4>
+<p>I had to double check everything, I couldn't believe it worked!. 7L13 spec.
+an. showing 0-1.8GHz. Nice 100MHz comb! Grabbed a better picture but the CRT 
+readout was being flaky, I'll need to take a look at that.</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm6.staticflickr.com/5544/9146500115_acbedc07f1_b.jpg">
+<div class="carousel-caption">
+<h4>Time Domain - OCXO</h4>
+<p>While I had it set up, I couldn't pass up the opportunity to take a look in 
+the time domain. This is the output of the OCXO directly input to the 7A26 
+amplifier. I honestly don't know if this is what it's supposed to look like,
+being surplus and not a listed part #, but the H in the number (VFT22H-100MHz) 
+is noted elsewhere as HCMOS output, which makes the sharp leading edge make 
+a little more sense. Not sure what kind of load it's meant to drive, etc., but 
+so long as the phase noise is OK, should work for my application. 10V p-p is 
+pretty serious too...</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm3.staticflickr.com/2883/9146490969_093485b920_b.jpg">
+<div class="carousel-caption">
+<h4>Time Domain - OCXO + NLTL</h4>
+<p>Output is attenuated and sharpened. Not as much loss as I expected, although 
+the fundamental should be pretty strong. ~6V p-p after the NLTL. This is on the 
+7A29 so we can get a faster image, I need an attenuator before I'm comfortable  
+putting the straight OCXO output into that input. </p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm4.staticflickr.com/3766/9148955844_98f0e7caca_b.jpg">
+<div class="carousel-caption">
+<h4>Still sharp...</h4>
+<p>Not sure if this really follows the 90-10 rule or whatever, but if we fudge 
+a little, sure looks like &lsaquo;1nS risetime. Nice.</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm8.staticflickr.com/7429/9146722401_511e632abc_b.jpg">
+<div class="carousel-caption">
+<h4>~650pS?</h4>
+<p>Need to bump up my understanding of risetime measurements, but this is 
+what we get at 200pS/div. No flat-top here, but a nice pulse all the same.</p>
+</div>
+</div>
+<div class="item">
+<img src="http://farm6.staticflickr.com/5547/9146717479_20a1c3158d_b.jpg">
+<div class="carousel-caption">
+<h4>Fin.</h4>
+<p>Closing with a bad shot of the test setup on the bench. I need some shorter 
+interconnects!</p>
+</div>
+</div>
 
+</div>
+<a class="left carousel-control" href="#Build" data-slide="prev">&lsaquo;</a>
+<a class="right carousel-control" href="#Build" data-slide="next">&rsaquo;</a>
+</div>
 
+##### Conclusion
 
+I'm very happy with the initial test. I may try and do the first stage board 
+at the office with solder paste and the toaster oven since it's all 0402. 
+
+Can't wait to see what the pulse looks like after two NLTL stages! Would love 
+to max out this scope. Then I'll have to figure out a faster method. Sampling?
