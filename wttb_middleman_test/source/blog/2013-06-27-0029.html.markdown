@@ -92,6 +92,7 @@ point I was happy with the etch so I decided to build it up.</p>
 </div>
 
 
+
 ##### Build and Test
 
 I was at a sort of crossroads after etching this board. The plan is to have 
@@ -134,7 +135,7 @@ due to rectified voltage.</p>
 </div>
 </div>
 <div class="item">
-<img src="http://farm3.staticflickr.com/2882/9146583759_4c@ce7db5_b.jpg">
+<img src="http://farm3.staticflickr.com/2882/9146583759_4caace7db5_b.jpg">
 <div class="carousel-caption">
 <h4>Test Setup</h4>
 <p>Kind of a kludgy setup, surplus OCXO powered by an unregulated wall-wart 
@@ -205,6 +206,7 @@ interconnects!</p>
 <a class="right carousel-control" href="#Build" data-slide="next">&rsaquo;</a>
 </div>
 
+
 ##### Conclusion
 
 I'm very happy with the initial test. I may try and do the first stage board 
@@ -212,3 +214,4 @@ at the office with solder paste and the toaster oven since it's all 0402.
 
 Can't wait to see what the pulse looks like after two NLTL stages! Would love 
 to max out this scope. Then I'll have to figure out a faster method. Sampling?
+
