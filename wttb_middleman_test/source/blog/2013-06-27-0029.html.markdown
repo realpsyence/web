@@ -47,11 +47,13 @@ printout on the right. Pretty sure this attempt failed though...</p>
 </div>
 <div class="item">
 <img src="http://farm3.staticflickr.com/2811/9148854944_ac657ff700_b.jpg">
+<div class="carousel-caption">
 <h4>Most paper removed...</h4>
 </div>
 </div>
 <div class="item">
 <img src="http://farm6.staticflickr.com/5467/9146620481_8a29b7668f_b.jpg"> 
+<div class="carousel-caption">
 <h4>...crap</h4>
 <p>I was afraid of this, or something like it. When laminating I think I had left
 too much paper attached and a few times I heard a pop like a part coming unstuck.
@@ -61,6 +63,7 @@ but in the end too much was wrong.</p>
 </div>
 <div class="item">
 <img src="http://farm4.staticflickr.com/3802/9148844044_c9eeb6ea3e_b.jpg">
+<div class="carousel-caption">
 <h4>Fingers crossed!</h4>
 <p>Third time's the charm? I realized too much paper was an issue, and also 
 that trimming the board after etching was a) risky, and b) wasteful of copper 
@@ -71,19 +74,21 @@ traces and the gap on the CPW is only 7mil...</p>
 </div>
 <div class="item">
 <img src="http://farm3.staticflickr.com/2887/9146610951_9c13310d86_b.jpg">
+<div class="carousel-caption">
 <h4>...clean...</h4>
 </div>
 </div>
 <div class="item">
 <img src="http://farm6.staticflickr.com/5460/9146608049_53f703c252_b.jpg"> 
+<div class="carousel-caption">
 <h4>...and shiny.</h4>
 <p>Scrubbed down with scotchbrite, careful not to scratch the traces. At this 
 point I was happy with the etch so I decided to build it up.</p>
 </div>
 </div>
+</div>
 <a class="left carousel-control" href="#Etching" data-slide="prev">&lsaquo;</a>
 <a class="right carousel-control" href="#Etching" data-slide="next">&rsaquo;</a>
-</div>
 </div>
 
 ###### Build and Test
@@ -98,6 +103,7 @@ I should re-do the layout for the 0402 inductors.
 However, in the interest of testing my layout, concept, test equipment, etc.,
 I went ahead and built up the NLTL for the 2nd stage, and tried it out with 
 the 100MHz signal. 
+
 
 
 
