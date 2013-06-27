@@ -27,6 +27,7 @@ by the fine folks who regularly do fine pitch SMT boards at home, I chose
 to test the limits of my laser printer -> laminator -> etchant setup.
 
 ###### Etching
+
 <div id="Etching" class="carousel slide">
 <div class="carousel-inner">
 <div class="item active">
@@ -83,6 +84,7 @@ point I was happy with the etch so I decided to build it up.</p>
 <a class="left carousel-control" href="#Etching" data-slide="prev">&lsaquo;</a>
 <a class="right carousel-control" href="#Etching" data-slide="next">&rsaquo;</a>
 </div>
+</div>
 
 ###### Build and Test
 
@@ -96,5 +98,6 @@ I should re-do the layout for the 0402 inductors.
 However, in the interest of testing my layout, concept, test equipment, etc.,
 I went ahead and built up the NLTL for the 2nd stage, and tried it out with 
 the 100MHz signal. 
+
 
 
