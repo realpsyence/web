@@ -1,7 +1,7 @@
 ---
 title: Quick Notes on Component Organization
 date: 2013-06-13
-time: 11:28
+time: 14:28
 tags: diy,homebrew,electronics,organization,akro-mils,adafruit,smd
 ---
 
@@ -127,4 +127,5 @@ four tinies...</p>
 
 Pretty excited about this. More to come on the equipment, and I still have to 
 figure out a bench situation...
+
 
