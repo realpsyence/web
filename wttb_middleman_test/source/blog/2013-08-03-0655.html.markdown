@@ -1,0 +1,105 @@
+---
+title: Tektronix 7603 Repair 
+date: 2013-08-03
+time: 06:55 
+tags: tektronix,oscilloscope,electronics,diy,repair
+---
+
+
+#### Troubleshooting a Dead Scope
+
+Part of my lab build out was to assemble the missing pieces of my test 
+equipment collection. I had already found a 7104 1GHz scope with plugins, 
+so I was mostly set for normal analog signals, but I was trying to work 
+at S-band, which even my spectrum analyzer didn't cover. 
+
+I ended up becoming enamored with the plugin concept embodied by the Tek 
+7000 series, so I started looking for the 7S/7T sampling plugins. These 
+plugins accept their own plugins in the form of sampling heads. Depending
+on the risetime of the pulse generator circuit in the head, these allow
+viewing repetitive waveforms up to 12.4GHz. I had to have one.
+
+I found a 7S12 with S-6 head (11.5GHz) and S-52 pulser for a reasonable(?!)
+price on eBay. It was untested but looked clean and I had just "fixed" the 
+7104 a few days prior by re-seating a TO-8 IC, so I had high hopes I'd be 
+able to salvage this guy as well.
+
+##### Unboxing and Inspection
+
+I was pleasantly surprised when I got the scope that it had been correctly
+packaged. This was the third piece of used test equipment I'd gotten off
+eBay and the first two had suffered damage to knobs and enclosure due to the 
+sellers underestimating A) how heavy the damn things are and B) how rough 
+our package handlers are. Ironically, the scope had had a few knobs broken off 
+ -- that was part of the reason it went for as little as it did.
+
+[IMAGE OF SCOPE]
+[BROKEN KNOBS]
+
+The 7S12 plugin looked good, but not knowing how to operate it I pulled it out
+to set it aside. Doing so I was greeted with an unpleasant sticky situation 
+-- literally. The bottom outer rail of the plugin was covered with an 
+unidentifiable sticky brown liquid - best guess is ancient cola. Sure enough, 
+a close look at the ventilation holes on the top of the case revealed the 
+ingress point. Ruh-roh indeed.
+
+[7S12 PLUGIN]
+[LIQUID]
+
+I looked around and didn't find a pool of liquid anywhere, so I went ahead
+and plugged the scope in on it's own surge protector, and pulled the power 
+knob. Nada. Zip. Zero. Nothing. No power indicator light, no graticule illum., 
+so hum, no nothing. 
+
+##### Diagnostics and Repair 
+
+Time to pull the covers. I have to give credit to Tektronix for good 
+documentation. Every manual I've seen from them has start-up, calibration, 
+and at least basic service information. Not having to track down a separate, 
+rare, unpublished service manual is a major bonus in my book. 
+
+Once the covers were off, I noticed a second major design choice that allowed
+ease of service - essentially all the low-voltage circuits were mounted exterior
+to any shielding necessary for the HV circuts. Additionally, they are labeled
+and interconnected with ribbon cables that are long enough to stay attached
+even when the boards are unmounted for debug and service. This was a huge help.
+
+Alright, so we start with the power supply. Obviously simple things like the 
+indicator lights aren't getting power, so let's see why not. The 3-slot 7000 
+series mainframes generally have linear power supplies, with a separate 
+transformer/rectifier section and regulator board. I slid the rectifier section 
+out first, before realizing it was more likely the regulator board with it's 
+associated power NPNs was a better (worse?) failure candidate.
+
+Disconnecting the regulator from the rectifier showed correct function of the 
+full-wave rectifiers and filter caps, which I was particularly worried about 
+because they are giant metal can suckers, and would be a bear to replace.
+
+Onto the regulator board. The voltages output include +130V which measured
+~+78V, +50V measured 16, and none of the negative voltages were less than 0V.
+Clearly something was shorting somewhere. Unplugging all loads via ribbon 
+cabling showed the regulators themselves were working correctly, so the short 
+was downstream.
+
+I eventually isolated the short to the X-axis amplifier board. Since this 
+connects directly to the CRT deflection plates, I was somewhat relieved when 
+the short I found between -50V and ground remained when I removed the board 
+entirely. I was not excited to source and replace the CRT. 
+
+Taking a look at the schematic revealed a 1uF capacitor between -50V and GND.
+In fact, this was the only rail that had a cap directly to ground, the other 
+voltages having multiple transistors or resistive dividers making a simple 
+short unlikely. I took a gamble and snipped the leads of the cap, resulting 
+in a more reasonable 18kOhm between -50V and GND. The cap by itself measured 
+about an Ohm. Bad cap. 
+[BAD CAP]
+[GOOD CAP]
+Soldering in a Radioshack 1uF 50V cap replacement later, and all 
+the voltages measured within 1% of nominal. Plugged everything back in and 
+with fingers crossed I pulled the knob. Green light! Graticule Illumination!
+Big Smile! I had to pull the 7L13 plugin from my other 7603 to be sure the CRT 
+was working correctly as I still didn't understand the sampling operation.
+Sure enough, everything was good to go. I cleaned up some of the brown spill
+and closed her back up. Success.
+[SPEC AN SHOT]
+
