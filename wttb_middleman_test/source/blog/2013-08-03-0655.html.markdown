@@ -33,8 +33,7 @@ sellers underestimating A) how heavy the damn things are and B) how rough
 our package handlers are. Ironically, the scope had had a few knobs broken off 
  -- that was part of the reason it went for as little as it did.
 
-[IMAGE OF SCOPE]
-[BROKEN KNOBS]
+![Broken Knobs](http://farm3.staticflickr.com/2864/9426381692_73c7d84d7a_b.jpg)
 
 The 7S12 plugin looked good, but not knowing how to operate it I pulled it out
 to set it aside. Doing so I was greeted with an unpleasant sticky situation 
@@ -43,8 +42,11 @@ unidentifiable sticky brown liquid - best guess is ancient cola. Sure enough,
 a close look at the ventilation holes on the top of the case revealed the 
 ingress point. Ruh-roh indeed.
 
-[7S12 PLUGIN]
-[LIQUID]
+![This looks OK, but was sticky on the underside](http://farm6.staticflickr.com/5321/9426369326_419f37296c_b.jpg)
+The plugin looked OK, but was sticky underneath. 
+
+![This does not look OK...](http://farm3.staticflickr.com/2872/9423686987_4f3c5ffa09_b.jpg)
+This did not look good...
 
 I looked around and didn't find a pool of liquid anywhere, so I went ahead
 and plugged the scope in on it's own surge protector, and pulled the power 
@@ -92,8 +94,13 @@ voltages having multiple transistors or resistive dividers making a simple
 short unlikely. I took a gamble and snipped the leads of the cap, resulting 
 in a more reasonable 18kOhm between -50V and GND. The cap by itself measured 
 about an Ohm. Bad cap. 
-[BAD CAP]
-[GOOD CAP]
+
+![BAD CAP, cool color scheme](http://farm6.staticflickr.com/5454/9426483254_8462c4b02f_b.jpg)
+Bad cap, good color scheme.
+
+![Replacement "Qunlo" cap. We'll see how long this lasts :-/](http://farm4.staticflickr.com/3801/9426505816_fe82738f74_b.jpg)
+Qunlo brand replacement. Not my first choice, but it's what I had on hand.
+
 Soldering in a Radioshack 1uF 50V cap replacement later, and all 
 the voltages measured within 1% of nominal. Plugged everything back in and 
 with fingers crossed I pulled the knob. Green light! Graticule Illumination!
@@ -101,5 +108,9 @@ Big Smile! I had to pull the 7L13 plugin from my other 7603 to be sure the CRT
 was working correctly as I still didn't understand the sampling operation.
 Sure enough, everything was good to go. I cleaned up some of the brown spill
 and closed her back up. Success.
-[SPEC AN SHOT]
+
+![Loopback test of the 50MHz calibration signal](http://farm6.staticflickr.com/5488/9423750019_60ab477972_b.jpg)
+
+That's a happy CRT!
+
 
