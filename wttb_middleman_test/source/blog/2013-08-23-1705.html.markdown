@@ -1,0 +1,36 @@
+---
+title: DIY Solder Stencils via Craft Cutter
+date: 2013-08-23
+time: 17:05
+tags: diy,stencils,pcb,reflow,smd
+---
+
+
+#### Making my own Solder Stencils
+
+I ran into some issues soldering the 0402 varactor diodes for the NLTL pulser. Essentially, I'm finding 
+a lot of SMT packages that have pads only on the very bottom. QFN/MLP style packages often have pads that 
+wrap around the sides, making it possible to manually heat up and let solder wick underneath, but there are 
+a number of new packages with contacts only on the underneath - not to mention die attach/thermal pads and 
+we haven't even started on BGAs. 
+
+So what to do? Well, reflow with solder paste is the obvious solution, but manually applying paste, which works
+ok for 2-lead packages, often fails with this kind of stuff because it's far too easy to apply too much, leading 
+to invisible bridges and there's no chance of rework. So...the big boys make stencils. You can get stencils made,
+IIRC OHS Park among others will do them relatively cheaply, but at that point you're starting down that slippery 
+slope of sending things off and waiting to get them back, and paying along the way. That slope leads to assembly 
+houses and large minimums, which is not the thing you want when you're not sure if something's going to work.
+
+Enter semi-disposable stencils cut in-house. Combined with etching your own PCBs, this means you could design and
+build a board in one day, assuming you've already got the parts. But you're probably not cutting stainless...
+
+Turns out overhead transparencies are just the right thickness (3-4mil) for most pad footprints, and can be cut 
+with x-acto knives and their motorized equivalent, the craft cutter. [This guy](http://www.instructables.com/id/Create-Solder-Paste-Stencils-with-Cricut/)
+did just that a couple years ago with a Cricut. Well, I had a Zing which is a similar cutter from KNK. The 
+software was incompatible, but I knew the Zing would take a PDF - so I just took my Gerber, exported it to PDF, 
+1:1 and did a test. So far so good, everything lines up. I want to re-do the board to include both NLTLs, amplifiers, 
+and filters to put everything except the OXCO on the same board. Then I plan to cut a stencil, double check everything 
+and bake it. Fingers crossed!
+
+![First transparency cut with the Zing](http://farm4.staticflickr.com/3703/9562483957_bae1b5d0fb_b.jpg)
+
