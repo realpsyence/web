@@ -3939,6 +3939,23 @@ input[type="submit"].btn.btn-mini {
   margin-top: 5px;
 }
 
+.center .navbar .nav,
+.center .navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 */
+  *zoom:1; /*ie7*/
+  vertical-align: top;
+}
+
+.center .navbar-inner {
+  text-align:center;
+}
+
+.center .dropdown-menu {
+  text-align; left;
+}
+
 .nav {
   margin-bottom: 21px;
   margin-left: 0;

@@ -24,6 +24,7 @@ price on eBay. It was untested but looked clean and I had just "fixed" the
 7104 a few days prior by re-seating a TO-8 IC, so I had high hopes I'd be 
 able to salvage this guy as well.
 
+READMORE
 ##### Unboxing and Inspection
 
 I was pleasantly surprised when I got the scope that it had been correctly
@@ -36,6 +37,8 @@ our package handlers are. Ironically, the scope had had a few knobs broken off
 ![Broken Knobs](http://farm3.staticflickr.com/2864/9426381692_73c7d84d7a_b.jpg)
 
 The 7S12 plugin looked good, but not knowing how to operate it I pulled it out
+
+
 to set it aside. Doing so I was greeted with an unpleasant sticky situation 
 -- literally. The bottom outer rail of the plugin was covered with an 
 unidentifiable sticky brown liquid - best guess is ancient cola. Sure enough, 
@@ -112,5 +115,7 @@ and closed her back up. Success.
 ![Loopback test of the 50MHz calibration signal](http://farm6.staticflickr.com/5488/9423750019_60ab477972_b.jpg)
 
 That's a happy CRT!
+
+
 
 

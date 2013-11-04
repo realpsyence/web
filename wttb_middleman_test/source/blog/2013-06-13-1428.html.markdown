@@ -19,7 +19,7 @@ at the LABS, I felt it was time.
 
 I'll detail more when I get it set up, but wanted to make a quick post on some ideas
 about organizing components. 
-
+READMORE
 One of my co-workers uses 3-ring binders with card pages, filled with bags of components.
 
 Pluses for the binder system:
@@ -127,5 +127,6 @@ four tinies...</p>
 
 Pretty excited about this. More to come on the equipment, and I still have to 
 figure out a bench situation...
+
 
 

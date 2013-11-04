@@ -25,7 +25,7 @@ I laid out an 8-stage NLTL in Eagle with 0603 inductor pads and 0402 varactor
 diodes. I debated getting some boards professionally fabricated, but inspired
 by the fine folks who regularly do fine pitch SMT boards at home, I chose 
 to test the limits of my laser printer -> laminator -> etchant setup.
-
+READMORE
 ##### Etching
 
 <div id="Etching" class="carousel slide">
@@ -214,4 +214,5 @@ at the office with solder paste and the toaster oven since it's all 0402.
 
 Can't wait to see what the pulse looks like after two NLTL stages! Would love 
 to max out this scope. Then I'll have to figure out a faster method. Sampling?
+
 

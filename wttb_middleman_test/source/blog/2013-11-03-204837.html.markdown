@@ -1,0 +1,63 @@
+---
+title: All Apologies...21 Days Intro
+date: 2013-11-03
+time: 20:48
+tags: habit,organization
+---
+
+#### Updates on me, the site, maybe you!
+
+Lots has happened since my last post here, and I thought it time to write a little
+bit describing the changes. 
+
+First and foremost, I've left Sensorstar LABS, NYC, and even the contiguous U.S. east
+of the rockies. Yes, I've moved to California. San Jose to be exact, and have a new 
+group of cool cats I'm working with. Very exciting (for me).
+
+I've almost got my lab all moved in, photos to come when I make something and prove
+to myself I've got everything put back together correctly. Living with two housemates
+has made quick work of my prior lack of furniture, which is nice. Now to get producing
+again ...and it's November. Sad Face.
+
+Well, here's the plan then, since I am in Sunny San Jose (they tell me it rains in the
+winter, but I'm gonna jinx myself since it really hasn't yet) - I'm going to try and 
+develop a productive habit while I'm still getting some Vitamin D.
+
+READMORE
+
+##### 21 Days to a Better You 
+
+Sounds familiar right? Wouldn't be the first time, but a coworker suggested it and 
+who am I to argue? So if it takes 21 days to create a habit, let's make it a good one 
+and start today. So I want to produce one thing a day, starting with these 21 days.
+
+Now I need to lay some ground rules, because as with any task, it's easy to cheat. 
+
+I really want to make something useful, meaningful, and constructive toward a larger 
+personal goal. So, what kinds of things are we talking about? 
+
+  * Plans 
+      A really good detailed plan of attack takes non-trivial effort, and should 
+      qualify as a thing to produce.
+  * Design
+      This can be a dimensioned sketch all the way through a CAD drawing ready for 
+      production, but should be completed by the end of the day. A good example 
+      would be the vector drawing to laser cut a laptop stand, or a simple circuit
+      that I designed and tested for integration to say, the hackable battery.
+  * Code
+      Some snippet of code that does something useful and builds towards something 
+      really cool. The wood database scrapyer code would have qualified.
+  * Other
+      Maybe something else, a piece of art (sculpture, poem, whatever) that enriches
+      my space. Furniture or an addition to something. Written solutions to a Calculus
+      or other problem I'm working on . I'm also including blog posts
+      here even though it could be a cop-out. A blog by itself would have to be really 
+      detailed to qualify. Perhaps instructions or a quick how-to...
+
+So what? Yeah, well, no one reads this anyway so it's an exercise in self improvement. 
+Wish me well. Additionally, I won't feel accomplished unless I do a quick write-up about 
+that day's accomplishment. That should be the minimum item produced.
+
+
+D. Logan. Signing off Day 0 of 21. Sunday November 3rd, 2013.
+

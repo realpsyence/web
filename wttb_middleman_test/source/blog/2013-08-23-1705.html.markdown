@@ -23,6 +23,7 @@ houses and large minimums, which is not the thing you want when you're not sure 
 
 Enter semi-disposable stencils cut in-house. Combined with etching your own PCBs, this means you could design and
 build a board in one day, assuming you've already got the parts. But you're probably not cutting stainless...
+READMORE
 
 Turns out overhead transparencies are just the right thickness (3-4mil) for most pad footprints, and can be cut 
 with x-acto knives and their motorized equivalent, the craft cutter. [This guy](http://www.instructables.com/id/Create-Solder-Paste-Stencils-with-Cricut/)
@@ -33,4 +34,7 @@ and filters to put everything except the OXCO on the same board. Then I plan to 
 and bake it. Fingers crossed!
 
 ![First transparency cut with the Zing](http://farm4.staticflickr.com/3703/9562483957_bae1b5d0fb_b.jpg)
+
+
+
 
