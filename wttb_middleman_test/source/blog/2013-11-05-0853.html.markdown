@@ -1,0 +1,27 @@
+---
+title: Diagonals - Day 1 on Day 2
+date: 2013-11-05
+time: 08:53
+tags: laser,cutting,lasercutting,flatpack,diy,design
+---
+
+#### Habits are hard, here's some geometry
+
+So I worked on a project last night, but didn't get it where I wanted it 
+due to tool issues (sure, blame it on the tools). That said, I'm writing up 
+some notes on it so I can say A) I did a quick post for day 1 and B) show
+progress.
+
+So here's the geometry: Imagine you have a cuboid (rectangular prism, 
+parallelpiped, etc.). Draw two diagonals such that the lower, starting 
+point of the diagonals are on the same long face. The diagonals should 
+bisect each other at the center of the cuboid. 
+ 
+Now, note the angle from horizontal (the plane the cuboid could be said to be 
+sitting on) that the triangle formed by the two diagonals' starting points and 
+their intersection point is at. (Yes, all of this would be much easier with a drawing,
+sorry, see tools above).
+
+What happens to that angle as you bring the back of the cuboid toward the front?
+
+That's all for now. More to come tonight...
