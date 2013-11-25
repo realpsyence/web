@@ -1,5 +1,5 @@
-Merge/backpost stuff from tumbler.com
-Post to tumbler pointing at new revamp of wttb.com
+Merge/backpost stuff from tumblr.com
+Post to tumblr pointing at new revamp of wttb.com
 
 add 3D modeling photos
 
@@ -13,3 +13,8 @@ sub-page for clock
   block diagram (XO->amp->x5->filter->amp->x7->filter->buffer?)
 
 post images of ocxo, 500MHz filter, render of 3d model for cavity filter...
+
+clean up layout
+ - center the main stuff 
+ - make blog the home page 
+ - make sure all links are updated (I'm looking at you home->PA3AKE->about)
