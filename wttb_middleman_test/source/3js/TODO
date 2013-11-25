@@ -1,0 +1,7 @@
+use http://www.chaosreigns.com/code/springgraph/ to understand graph affinity/springiness, etc.
+https://github.com/samizdatco/arbor - same
+
+
+draw 1-100 as nodes of that many facets(?) 
+draw each node with links as factors (i.e. 15 has links to 5 and 3)
+
