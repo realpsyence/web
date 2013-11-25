@@ -31,7 +31,7 @@ activate :directory_indexes
 
 page "/feed.xml", :layout => false
 
-
+#page "/3js/*", :layout => false
 ### 
 # Compass
 ###
