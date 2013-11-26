@@ -9,7 +9,16 @@
 
 <!-- ------------------------------------------------------------ -->
 
-<div class="span2"></div>
+<div class="span2"><H4>Scribbling with ThreeJS...</H4>
+  <p> Some quick experiments I've done playing with the three.js library. Up next: 
+  <li>Graphs</li>
+  <li>Rendering PDF to texture</li>
+  <li>Rendering HTML to texture</li>
+  <li>Rendering images to texture</li>
+  <li>Making the nodes turn to the viewer</li>
+  <li>Etc. to make a full app...</li>
+  </p>
+</div>
 <div class="span9" id="ThreeJS">
 <script>
 /*
@@ -65,7 +74,7 @@ function init()
 	scene.add(camera);
 	// the camera defaults to position (0,0,0)
 	// 	so pull it back (z = 400) and up (y = 100) and set the angle towards the scene origin
-	camera.position.set(0,450,1500);
+	camera.position.set(-800,500,1500);
 	camera.lookAt(scene.position);	
 	
 	//////////////
@@ -114,7 +123,7 @@ function init()
 	// displays current and past frames per second attained by scene
 	stats = new Stats();
 	stats.domElement.style.position = 'absolute';
-	stats.domElement.style.top = '100px';
+	stats.domElement.style.top = '60px';
   stats.domElement.style.zIndex = 100;
 	container.appendChild( stats.domElement );
 
@@ -138,7 +147,30 @@ function init()
 	//  a collection of points ("geometry") and
 	//  a set of surface parameters ("material")	
 
-	// Sphere parameters: radius, segments along width, segments along height
+
+  // Text surface 
+
+  var bitmap = document.createElement('canvas');
+  var g = bitmap.getContext('2d');
+  bitmap.width = 100;
+  bitmap.height = 100;
+  g.font = 'Bold 20px Arial';
+
+  g.fillStyle = 'white'
+  g.fillText("TEXT!", 0, 20);
+  g.strokeStyle = 'black';
+  g.strokeText("TEXT!", 0, 20);
+
+  var texture = new THREE.Texture(bitmap)
+  texture.needsUpdate = true;
+  
+  var textGeo = new THREE.PlaneGeometry(200,200);
+  var textMat = new THREE.MeshBasicMaterial({map: texture, transparent: true});
+  var textPlane = new THREE.Mesh(textGeo, textMat);
+  textPlane.position.set(0, -250, 300);
+  scene.add(textPlane);
+  
+  // Sphere parameters: radius, segments along width, segments along height
 	var sphereGeometry = new THREE.SphereGeometry( 50, 32, 16 ); 
 	// use a "lambert" material rather than "basic" for realistic lighting.
 	//   (don't forget to add (at least one) light!)
@@ -230,12 +262,31 @@ function init()
   var signMaterial = new THREE.MeshBasicMaterial( {color: 0x458272} );
   var signs = [];
   for(var word = 0; word < words.length; word++){
+    var bitmap = document.createElement('canvas');
+    var g = bitmap.getContext('2d');
+    bitmap.width = 100;
+    bitmap.height = 100;
+    g.font = 'Bold 20px Arial';
     var angle = (2*Math.PI / words.length) * word;
-    var signGeometry = new THREE.PlaneGeometry( 50, 50 );
-    var sign = new THREE.Mesh ( signGeometry, signMaterial );
+   // Text surface 
+    g.fillStyle = 'white'
+    g.fillText(words[words.length - word -1 ], 0, 20);
+    g.strokeStyle = 'black';
+    g.strokeText(words[words.length - word - 1], 0, 20);
+
+    var texture = new THREE.Texture(bitmap)
+    texture.needsUpdate = true;
+    
+    var textMat = new THREE.MeshBasicMaterial({map: texture, transparent: true});
+    var textPlane = new THREE.Mesh(textGeo, textMat);
+    var signGeometry = new THREE.PlaneGeometry( 200, 200);
+    var sign = new THREE.Mesh ( signGeometry, textMat);
     sign.translateX(Math.cos(angle) * 500);
     sign.translateY(Math.sin(angle) * 500);
+    sign.translateZ(500 * (words.length - word )/words.length);
     signs.push(sign);
+ 
+
     //signsGeo.add(signs[word]);
     signsGeo.add(sign);
   }
