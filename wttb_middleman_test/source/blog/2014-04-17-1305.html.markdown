@@ -1,0 +1,42 @@
+---
+title: Quick Notes on Toshiba UniPro LSI Bridges
+date: 2014-04-17 
+time: 13:05
+tags: aradev,asic,fpga,bga,pcb,ee
+---
+
+
+### Some back of the envelope calculations on the Toshiba UniPro AP and GP bridge chips.
+
+###What do we know?
+Current implementation of the bridges is on Lattice ECP3 FPGAs, the one on the 
+reference Wi-Fi module for instance (first one I opened in Altium) is the 
+LFE3-17EA-8LMG328I-ND (digikey part #) - it's a 17K LUT device with 116 I/O pins
+in a 10x10mm csBGA package. The csBGA from Lattice is a 0.5mm pitch package. 
+
+####What else?
+Shardul Kazi, SVP at Toshiba mentioned something to the effect of it will be smaller 
+in ASIC form, with no definites - but 0.4mm pitch. 
+
+Later, I spoke with Louis Tremblay of FLIR, who was there trying to get people interested 
+in a new smartphone-size thermal imager module (CCD+Optics). He had asked Shardul the 
+package question that prompted the evasive 0.4mm pitch answer. He was flagged down by 
+a Lattice sales rep who mentioned the Objective Design planned for a 7x7mm package. 
+Louis remarked that this was still huge, and I agree, in part. The problem is the modules
+are effectively on a ~18mm grid, and this chip still takes up 15% of the 1x1 module 
+board space -- without accounting for power, support circuitry, and the EPM cutouts!
+
+####What's the best guess and saving grace?
+7x7mm actually sounds pretty reasonable. Sure we'd like it to be 5x5mm or smaller, but 
+if we expect a similar number of pins, because these bridges have a lot of I/O to deal with 
+(I2C, DSI, CSI, etc.), moving to a 0.4mm pitch gets us to around 8x8mm, and so without 
+much effort on Toshiba's part, we're pretty close to 7x7mm. The argument will be that 
+since an ASIC can have much better organization and internal power routing that many of 
+those pins will not be needed, and that's valid. The bridge alone probably does fit in 5x5mm. 
+
+**BUT!** There's a big saving grace that Mr. Kazi made mention of that makes the 7x7mm package 
+bearable: the EPM driver. That big honking piece of switching power electronics that 
+takes the Endo's floating 3.3-5.5V power rail and boosts it to 28V, stores enough charge for a 
+10uS 10A pulse, and sends it through an H-bridge to switch the ElectroPermanent Magnets 
+on or off -- is planned to be integrated in the bridge chips. All of a sudden that package 
+doesn't seem so huge. 
