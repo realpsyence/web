@@ -2,4 +2,9 @@ This is the root directory of my "web" repo on github.
 Stuff for wordtothebaker.com and mechanart.com might go here - 
   mechanart may move to it's own repo...
 
+Most stuff is in wttb_middleman_test - which may get renamed 
+since it's no longer the test...
 
+
+TODO:
+Lot of twitter bootstrap needs to go away...

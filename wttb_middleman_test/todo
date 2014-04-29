@@ -18,3 +18,4 @@ clean up layout
  - center the main stuff 
  - make blog the home page 
  - make sure all links are updated (I'm looking at you home->PA3AKE->about)
+ - ditch most of bootstrap...
