@@ -1,40 +1,37 @@
+#### Notes on small ARM boards for networking applications.
+_Updated 29-Apr-14_
 
-
-
-
-Notes on small ARM boards for networking applications.
-
-There are a number of small and smaller ARM single-board computers on the market.
+  There are a number of small and smaller ARM single-board computers on the market.
 There is however, IMHO a dearth of options if you want multiple fast networking 
 interfaces. This is a shame. Here's some I've found looking around recently:
 
-CompuLab Utilite
-- 1GHz Freescale i.MX6 - 1/2/4 cores available, Cortex-A9 w/ GPU and HD Engine
-- 2xGbE, 802.11n+Bluetooth, 4xUSB2.0, USB OTG, RS-232
-- 2-8w
-- Micro-SD 4/8/32GB
-- 1-2 HDMI+DVI
-- $99, $159, $219
-
-HardKernel Odroid-XU
-- 1.6GHz Samsung Exynos5 - 4 cores each A15 & A7 - ARM big.LITTLE
-  - A15 includes virtualization instructions (which ones exactly?)
-  - PowerVR SGX544MP3 GPU 
-- 1x10/100MbE port plus optional USB 3.0 <=> GbE adaptor
-- 4xUSB2.0, 1xUSB3.0, 1xUSB3.0 OTG
-- MicroSD slot, no included flash
-- MicroHDMI
-- 2GB LPDDR3 RAM
-- $169 + $25 for GbE adaptor 
-
-Applied Micro Circuits X-Gene Platform
-- Uhh, this thing sounds amazing. 4x10GbE adaptors, 64-bit Cortex-A8, etc.
-
+* **CompuLab Utilite**
+    - 1GHz Freescale i.MX6 - 1/2/4 cores available, Cortex-A9 w/ GPU and HD Engine
+    - 2xGbE, 802.11n+Bluetooth, 4xUSB2.0, USB OTG, RS-232
+    - 2-8w
+    - Micro-SD 4/8/32GB
+    - 1-2 HDMI+DVI
+    - $99, $159, $219
+* **HardKernel Odroid-XU**
+    - 1.6GHz Samsung Exynos5 5410 - 4 cores each A15 & A7 - ARM big.LITTLE
+      - A15 includes virtualization instructions (which ones exactly?)
+      - PowerVR SGX544MP3 GPU 
+    - 1x10/100MbE port plus optional USB 3.0 <=> GbE adaptor
+    - 4xUSB2.0, 1xUSB3.0, 1xUSB3.0 OTG
+    - MicroSD slot, no included flash
+    - MicroHDMI
+    - 2GB LPDDR3 RAM
+    - $169 + $25 for GbE adaptor   
+* **HardKernel Odroid-XU2** 
+    - Exynos5 5420 - as 5410 above, but with process migration and all 8 cores 
+      active!
+* **Applied Micro Circuits X-Gene Platform**
+    - Uhh, this thing sounds amazing. 4x10GbE adaptors, 64-bit Cortex-A8, etc.
 
 Other interesting boards wtih only 1 interface:
-Habey USA i.MX6 based board, EMB-2500, GbE
 
-Beaglebone Black
-Rasberry Pi
-Adapteva Parallela 
-Arrow/Xilinx Zedboard and MicroZed ($395 and $199 respectively) ARM+FPGA boards w/ GbE 
+* Habey USA i.MX6 based board, EMB-2500, GbE
+* Beaglebone Black
+* Rasberry Pi
+* Adapteva Parallela 
+* Arrow/Xilinx Zedboard and MicroZed ($395 and $199 respectively) ARM+FPGA boards w/ GbE 
