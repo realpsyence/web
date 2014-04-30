@@ -19,4 +19,6 @@ extract vmlinux from bzImage:
         if=/boot/bzImage.x86_64 | gzip -d -c > /tmp/vmlinux
     # 0x1f8b0800 is the gzip header...
 
+leave off the trailing / on rsync, have a new folder!
+
 USE TMUX! USE MOSH!!!
