@@ -14,4 +14,7 @@
     - [to-do](/projects/ham_radio/ghz_sig_gen/)
 * Implement Curve25519 on an FPGA (PCIe Card?)
 * Do something with the Icarus Miner platform
-* Mod GTX-285 for Performance
+* Mod GTX-285 for Reliability(!)
+    - [Rev 2 (EVGA 1180) Mod](http://www.techpowerup.com/forums/threads/gtx-285-1180-vmod-guide.110950/)
+    - [Concise Write-up for Rev 1](http://www.techpowerup.com/articles/overclocking/voltmods/156)
+* Re-Do website
