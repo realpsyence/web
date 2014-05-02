@@ -17,4 +17,5 @@
 * Mod GTX-285 for Reliability(!)
     - [Rev 2 (EVGA 1180) Mod](http://www.techpowerup.com/forums/threads/gtx-285-1180-vmod-guide.110950/)
     - [Concise Write-up for Rev 1](http://www.techpowerup.com/articles/overclocking/voltmods/156)
+    - [Rev 2 Write-up #2](http://www.overclock.net/t/760625/sucessful-vmod-rev1-1-gtx285)
 * Re-Do website
