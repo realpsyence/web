@@ -19,3 +19,5 @@
     - [Concise Write-up for Rev 1](http://www.techpowerup.com/articles/overclocking/voltmods/156)
     - [Rev 2 Write-up #2](http://www.overclock.net/t/760625/sucessful-vmod-rev1-1-gtx285)
 * Re-Do website
+* Pancake motor generator
+    - [to-do](/projects/slim_gen/)
