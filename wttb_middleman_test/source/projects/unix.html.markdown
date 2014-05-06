@@ -19,6 +19,13 @@ extract vmlinux from bzImage:
         if=/boot/bzImage.x86_64 | gzip -d -c > /tmp/vmlinux
     # 0x1f8b0800 is the gzip header...
 
-leave off the trailing / on rsync, have a new folder!
+leave off the trailing / on rsync? Have a new folder!
+
+merge a single file from a git branch to your current one
+
+    git checkout --patch BRANCH file_to_merge
+
+want to add a new file from a different branch to the current one?
+leave off the --patch for savings!
 
 USE TMUX! USE MOSH!!!
