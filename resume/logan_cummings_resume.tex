@@ -1,0 +1,125 @@
+% LaTeX 
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\geometry{top =  0.5in}
+\usepackage{kpfonts}
+\usepackage[T1]{fontenc}
+
+\usepackage{paralist}
+\makeatletter\let\MPtrue\@minipagetrue\makeatother
+
+\usepackage{array, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
+\newcolumntype{R}{p{0.7\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\renewcommand{\arraystretch}{1.2}
+%\setlength{\tabcolsep}{0em}
+
+% no page numbers, besides others 
+\pagestyle{empty}
+\raggedright
+\usepackage[none]{hyphenat}
+\usepackage{changepage}
+
+% C++ Prettifier - thanks toofishes
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\begin{document}
+
+\centerline{\Large\bf D. Logan Cummings}
+%\hfill {\Large\bf{David Logan Cummings}} \\
+%\vspace{1em}
+\hfill +1-443-742-6564 \\
+www.wordtothebaker.com \hfill logan.cummings@gmail.com
+\vspace{1em}
+\hrule height 1pt
+
+%\section*{\textsc{\textbf{Objective}}} 
+%\begin{adjustwidth}{2.5em}{0pt}
+%  A multi-disciplinary role integrating technology and design to 
+%  improve human interactions with our environment and each other.
+%\end{adjustwidth}
+
+\section*{\textbf{\textsc{Education}}} 
+\begin{tabular}{L!{\VRule}R}
+  May 2007&{\sl Bachelor of Science}  \hfill Electrical and Computer Engineering \\
+          &\textbf{Johns Hopkins University}  \hfill Baltimore, MD \\
+\end{tabular}
+
+
+\section*{\textbf{\textsc{Experience}}}
+\begin{tabular}{L!{\VRule}R}
+  Nov. 2011 - August 2013&\textit{Staff Engineer} \\ 
+                     &\textbf{Talksum, Inc.} \hfill Campbell, CA \\
+                     &\MPtrue 
+  \begin{compactitem}
+  \item Developed a custom OS targeting both x86\_64 and ARM architectures in under 150MB 
+  \item Led the migration from hosted services to an in-house datacenter 
+  \item Led the design and development of a full-system testing suite 
+  \item Wrote requirements and specifications for ~\frac{1}{3} of initial release tasks
+  \end{compactitem} \\
+
+
+\begin{tabular}{L!{\VRule}R}
+  Nov. 2011 - Present&\textit{Co-Founder} \\ 
+                     &\textbf{Sensorstar Labs} \hfill Long Island City, NY \\
+                     &\MPtrue 
+  \begin{compactitem}
+  \item Designed and built an audio-synchronized 64-channel LED controller 
+  \item Aided in the development and testing of a virtual world conferencing application utilizing 
+    OpenCV for background segmentation
+  \end{compactitem} \\
+
+  June 2011 - Present&\textit{Founder, Chief Stuckee} \\
+                     &\textbf{Mechanart Industries, LLC} \hfill mechanart.com \\
+                     &\MPtrue 
+  \begin{compactitem}
+  \item Development of a business card sized wireless field visualizer
+  \item Design and functional verification of a novel power tool accessory 
+  \item Mechanical design and prototyping of custom cycle components
+  \end{compactitem} \\
+
+  Nov. 2010 - Sept. 2011&\textit{Consulting Senior Engineer}\\ 
+                        &\textbf{Sensorstar, Inc.} \hfill Ellicott City, MD \\
+                        &\MPtrue 
+  \begin{compactitem}
+  \item System architecture, power supply design, and team lead for a portable multi-mode wireless 
+    communications and data acquisition device
+  \item Circuit analysis and debug for a high-speed audio interleaving system
+  \item Android application testing and development
+  \end{compactitem}\\
+
+  Oct. 2008 - Oct. 2010&\textit{Systems Architect} \\
+                       &\textbf{Northrop Grumman ES} \hfill Linthicum, MD \\
+                       &\MPtrue 
+  \begin{compactitem}
+  \item Evaluation and selection of mainstream-market driven high performance coprocessors 
+    -- including algorithm work in C, VHDL, and CUDA
+  \end{compactitem}\\
+
+  June 2006 - Sept. 2008&\textit{Junior Engineer} \\
+                        &\textbf{Sensorstar, Inc.} \hfill Elkridge, MD \\
+                        &\MPtrue 
+  \begin{compactitem}
+  \item PCB GSM Antenna, power supply, and firmware for a personal GPS tracking device
+  \item Fast data collection system for avionic inertial navigation unit incorporating video 
+  \end{compactitem}\\
+
+\end{tabular}
+
+\section*{\textbf{\textsc{Skills}}}
+\begin{tabular}{L!{\VRule}R}
+  {\sl Computer Languages}& C, \CPP, Python, Bash, OpenCV, Ruby, {\LaTeX}, \textit{inter alia} as needed \\ 
+              {\sl 3D CAD}& PTC Creo (formerly Pro/ENGINEER), Alibre Design, SketchUp \\
+         {\sl PCB Design }& CadSoft Eagle \\ 
+          {\sl Simulation}& SPICE (LTSpice, Berkeley 3f5), Agilent ADS, Ansoft HFSS, Pro/Mechanica \\ 
+   {\sl Operating Systems}& Linux (Ubuntu pref.), OS X, Windows XP/7 \\
+      \textsl{Fabrication}& Welding (MIG, Stick, TIG(pref.)), Manual Machining \\ 
+  \textsl{Human Languages}& Native English, Conversational Spanish \\
+\end{tabular}
+
+
+\end{document}
