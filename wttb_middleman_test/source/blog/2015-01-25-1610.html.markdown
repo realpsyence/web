@@ -1,0 +1,60 @@
+---
+title: A $100 Grid Charger/Pack Rebalancer
+date: 2015-01-25
+time: 13:05
+tags: honda,insight,hybrid,charger,grid,plugin
+---
+
+
+### My super-simple wannabe plug-in hybrid.
+
+#### Background
+I'm the proud owner of a 2006 Honda Insight. The 1st generation Insight was the first 
+hybrid available for public sale in the US, and was also a pretty interesting design. 
+It has covered rear wheels, the lowest Cd of any production car to date, and was made 
+in the same factory as the NSX and S2000 with (supposedly) some of the same technology
+that made the NSX such an amazing handler (aluminum tub chassis).
+
+Problem is, it's 9 years old now, and the NiMH battery pack is on it's way out. I'm 
+partly to blame for that, letting it sit for long periods of time without driving to 
+recharge the pack. As a result, some of the cells have high self-discharge and the 
+pack becomes unbalanced after about a week of driving, causing the IMA light to go on 
+and the pack no longer charges or assists during driving. 
+
+#### Solution
+The solution is to replace the pack, the bad cells, or to top off the charge and 
+"re-balance" the pack using a trickle charger. This is generally considered a stop-gap 
+measure, as the trickle charge does nothing to remove the Nickel dendrites that are 
+likely causing the self-discharge, but it does prolong the usefulness of a dying pack, 
+and a number of folks swear by theirs as a means to keep driving the car.
+
+The general concensus is that a trickle charge of about 350mA is sufficient to charge 
+a pack that isn't too far gone, while keeping self-heating to a minimum and enabling the 
+cells to balance. 
+
+There are a couple ways to do this, many involving using a low-voltage constant current 
+driver to maintain the 350mA limit, while stacking PC power supplies to get to the pack 
+voltage of ~160-180V. Unfortunately, the pre-made ones run about $350, and while that's 
+not terrible, they're also not super easy to install.
+
+#### What I did
+So here's how I came up with a charger that integrates well, is hidden, and is most likely 
+not going to destroy my car. Maybe.
+
+I was browsing Digi-Key one day for work, and realized that there were pre-packaged 
+constant current drivers for LEDs. Nothing surprising there, as LEDs prefer to be driven
+with a constant current. However, what I hadn't realized previously was that there were
+drivers for long strings of LEDs, who's combined series voltage drop ended up in 
+approximately the same range as the NiMH pack in the insight. I decided on this guy:
+![Nicely packaged CC LED Driver](/assets/img/insight_charger/LED_driver.jpg "excelsys LXC-0350SW")
+
+Next step was installing it. I soldered a 6-foot pigtail NEMA plug to one end, and about
+28" of 22ga stranded wire to the other, with tinned ends. I ended up mounting it to the 
+little corner plate that's next to the grocery tub:
+![Installed](/assets/img/insight_charger/installed.jpg)
+
+Which solved a conundrum I had about installing the wires if I mounted the charger to 
+the large battery compartment cover. 
+
+Another hole into the fixed part of the compartment, a rubber grommet and some fiddling
+with the terminal coming out of the sense resistor later, and I had a stealth grid charger.
