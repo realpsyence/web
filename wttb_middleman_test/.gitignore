@@ -12,3 +12,6 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+# Ignore OSX's stupid thumbnail thingy
+/.DS_Store
